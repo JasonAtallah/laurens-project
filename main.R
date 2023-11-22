@@ -6,30 +6,26 @@
 # clear environment and set working directory
 rm(list=ls())
 
-#################### App config - update as needed ###########
-# This is the directory where you want to save everything
-working_directory<-'/Users/jason/git.nosync/laurens-project'
-# This is the name of your data file
+working_directory<-'/Users/lauren/final-project'
 filename <- "bankofamericafinalproject.xlsx"
-#############################################################
 file_path <- paste(working_directory, filename, sep = "/")
 setwd(working_directory)
 print(working_directory)
 
 
 # Install and Load Libraries
-# install.packages("stargazer")
-# install.packages("XML")
-# install.packages("plyr")
-# install.packages("quantmod")
-# install.packages("finreportr")
-# install.packages("dplyr")
-# install.packages("ggplot2")
-# install.packages("writexl")
-# install.packages("readxl")
-# install.packages("Hmisc")
-# install.packages("corrplot")
-# install.packages("forecast", dependencies = TRUE)
+install.packages("stargazer")
+install.packages("XML")
+install.packages("plyr")
+install.packages("quantmod")
+install.packages("finreportr")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("writexl")
+install.packages("readxl")
+install.packages("Hmisc")
+install.packages("corrplot")
+install.packages("forecast", dependencies = TRUE)
 
 #Load libraries
 library("finreportr")
@@ -44,7 +40,6 @@ library("readxl")
 library("Hmisc")
 library("corrplot")
 library("forecast")
-
 
 
 ####Download the XLSX files, clean them and consolidate, and then reupload.
